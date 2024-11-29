@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <title>FACTURACION ELECTRONICA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="anton-sc-regular">FACTURACIÓN ELECTRÓNICA</h1>
+        </div>
+        <div class="content">
+            <div class="form">
+                <form id="factura-form">
+                    <label for="nombre">Cliente:</label>
+                    <input type="text" name="nombre" id="nombre" required>
+
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" name="fecha" id="fecha" required>
+
+                    <label for="producto">Producto:</label>
+                    <input type="text" name="producto" id="producto" required>
+
+                    <label for="precio">Precio:</label>
+                    <input type="number" name="precio" id="precio" required>
+
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" name="cantidad" id="cantidad" required>
+
+                    <input type="button" value="Generar Factura" onclick="generarFactura()">
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
